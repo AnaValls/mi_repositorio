@@ -201,6 +201,12 @@ padding: 30px;
 
 }
 
+.item5:hover{
+transform: scale(1.2);
+
+
+} 
+
 
 
 .item6 {
