@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+
+} 
+
+header{
+
+    width: 100%;
+    height: 150px;
+    background-color: #cc9a4e;
+    background-image: linear-gradient(rgb(98, 73, 34), #d24504);
+}
+
+.encabezado p{ 
+    font-size: 50px;
+font-family: 'Times New Roman', Times, serif;
+color: black;
+text-transform: capitalize;
+float: left;
+margin-left: 10px;
+padding: 30px;
+
+}  
+
+header ul li{
+list-style: none;
+display: inline-block;
+padding: 8px;
+
+} 
+
+header ul  li a{
+
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 25px;
+    margin-right: 10px;
+    text-transform: capitalize;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 10px 10px 10px black;
+
+} 
+
+header a:hover{ color: black;
+} 
+
+
+.barra{
+    float: right;
+} 
+
+.barra2{
+float: right;
+color: aliceblue;
+text-decoration: none;
+font-size: 20px;
+margin-right: 8px;
+text-transform: capitalize;
+font-family: 'Times New Roman', Times, serif;
+
+
+
+} 
+
+.logo{
+    font-size: 45px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    text-transform: capitalize;
+    float: left;
+    margin-left: 10px;
+    padding: 30px;
+
+}
+
+main{
+
+    height: 100vh;
+    width: 100%;
+    background-image: url(../Root-\ LiceoFilosofico/bustos.jpg);
+    background-size: cover;
+    background-position: center;
+
+
+} 
+
+
+
+
+.flex-container{
+
+display: flex;
+flex-flow: row;
+height: 450px;
+flex-wrap:nowrap;
+align-content: flex-start;
+justify-content: center;
+background-color: #f3ca71;
+padding: 10px;
+border: 3px solid black;
+
+
+
+} 
+
+.flex-container div{
+background-color: #cc9a4e;
+width: 100%;
+margin: 10px;
+text-align: center;
+line-height: 75px;
+font-size: 30px;
+border: 2px solid #d24504;
+font-size: 25px;
+font-family: 'Times New Roman', Times, serif;
+}
+
+.grid-container{
+display: grid;
+background-color: aliceblue;
+grid-template-areas: 'header header header';
+grid-template-columns: auto auto auto;
+grid-template-rows: 300px 300px 300px;
+border: 2px solid black;
+height: auto;
+
+
+} 
+
+.grid-container div{
+background-color: #cc9a4e;
+border: 2px solid black;
+height: auto;
+
+}
+
+
+
+
+.item1 {
+    grid-area: header;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 45px;
+    text-align: center;
+    text-shadow: 2px 2px 2px #d24504;
+    padding: 30px;
+ }
+
+
+.item2 {
+background-image: url(../Root-\ LiceoFilosofico/foucault.jpg);
+background-size: contain;
+background-position: center;
+}
+
+
+.item2:hover {
+
+transform: scale(1.3);
+
+}
+
+.item3 {
+    background-image: url(../Root-\ LiceoFilosofico/flyernietzsche.jpg);
+    background-size: contain;
+    background-position: center;
+
+
+
+}
+
+
+.item3:hover {
+transform: scale(1.3);
+
+
+}
+
+.item4{
+background-image: url(../Root-\ LiceoFilosofico/flyerpandemia.jpg);
+background-size: contain;
+background-position: center;
+
+
+}
+
+.item4:hover{
+transform: scale(1.3);
+
+}
+
+.item5 {
+font-size: 20px;
+font-family: 'Times New Roman', Times, serif;
+text-align: center;
+text-shadow: 2px 2px 2px red;
+padding: 30px;
+
+
+}
+
+
+
+.item6 {
+font-family: 'Times New Roman', Times, serif;
+font-size: 20px;
+text-align: center;
+padding: 30px;
+
+
+}
+
+
+.item7{
+font-family:'Times New Roman', Times, serif;
+font-size: 20px;
+text-align: center;
+padding: 30px;
+
+
+
+
+} 
+
+.intro{
+background-color: black;
+font-family: 'Times New Roman', Times, serif;
+font-size: 25px;
+text-align: center;
+color: white;
+width: 100%;
+height: 100%;
+background-image: linear-gradient(rgb(98, 73, 34),#d24504 );
+text-shadow: 5px 5px 5px black;
+
+} 
+
+
+.cursos {
+    background-image: url(../Root-\ LiceoFilosofico/foucault2.jpg);
+    background-size: contain;
+    background-position: center;
+
+
+}
+
+.publicidad{
+background-image: url(../Root-\ LiceoFilosofico/barralateral.jpg);
+background-size:contain;
+background-position: center;
+
+
+} 
+
+
+
+
+footer
+{
+
+height: 45px;
+width: 100%;
+background-color: #cc9a4e;
+background-image: linear-gradient(rgb(98, 73, 34),#d24504 );
+font-family: 'Times New Roman', Times, serif;
+color: black;
+text-shadow: 10px 10px 10px black;
+font-size: 25px;
+text-align: center;
+padding-top: 20px;
+
+} 
+
+
