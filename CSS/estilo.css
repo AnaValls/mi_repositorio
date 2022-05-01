@@ -261,6 +261,23 @@ background-position: center;
 } 
 
 
+.container-fluid {
+background-color: black;
+font-size: 20px;
+color: white;
+border: 2px solid white;
+
+}
+
+
+.col-4-CET  { 
+
+    height: 100px;
+
+
+
+
+}
 
 
 footer
