@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../Media/bustos.jpg" type="bustos.jpg" />
     <title> CONTACTO</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../Root- LiceoFilosofico/estilo.css">
+    <link rel="stylesheet" href="../CSS/estilocontacto.css">
 </head>
 
 <body>
@@ -15,14 +16,16 @@
     <p class="logo"> <strong> Comunicate con nosotros </strong>  </p>   
 
   
-    <nav class="barra2"> 
-        <ul> 
-        <li> <a href="../Root- LiceoFilosofico/index.html"> Inicio</a></li>
-        <li> <a href="../Root- LiceoFilosofico/Pages/sobrenosotros.html">Sobre nosotros</a> </li>
-        <li> <a href="../Root- LiceoFilosofico/Pages/nuestrapropuesta.html"> Nuestra propuesta </a> </li>
-        <li> <a href="../Root- LiceoFilosofico/Pages/nuestroscursos.html" > Nuestros cursos</a> </li>
-        <li> <a href="../Root- LiceoFilosofico/Pages/contacto.html"> Contacto</a> </li>
-    </ul> </nav>
+    <nav class="barra2">  
+            <ul>
+            <li> <a href="../Pages/index.html"> Inicio</a></li>
+            <li> <a href="../Pages/sobrenosotros.html">Sobre nosotros</a> </li>
+            <li> <a href="../Pages/nuestrapropuesta.html"> Nuestra propuesta </a> </li>
+            <li> <a href="../Pages/nuestroscursos.html" > Nuestros cursos</a> </li>
+            <li> <a href="../Pages/contacto.html"> Contacto</a> </li>
+        </ul> </nav>
+         
+
 
   
    
@@ -36,14 +39,20 @@
             <div class="section-contacto-formulario">
                 <h1 class="formulario-titulo">Contactanos</h1>
 
-                <form action="formulario.php" method="POST">
+                <form action="formulario" method="POST">
+
                     <label for="name"></label>
+
                     <input type="text" placeholder="Nombre" name="nombre" id="name">
                     <label for="apellido"></label>
+
                     <input type="text" placeholder="Apellido" name="apellido" id="apellido">
                     <label for="email"></label>
-                    <input type="email" placeholder="Dejanos tu e-mail" name="email" id="email">
+
+                    <input type="email" placeholder="Dejanos tu mail" name="email" id="email">
+
                     <textarea>Mensaje</textarea>
+
                     <button type="submit"> Enviar</button>
 
                 </form>

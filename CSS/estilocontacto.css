@@ -78,7 +78,7 @@ main{
 
     height: 100vh;
     width: 100%;
-    background-image: url(../Root-\ LiceoFilosofico/bustos.jpg);
+    background-image: url(../Media/bustos.jpg);
     background-size: cover;
     background-position: center;
 
@@ -172,7 +172,7 @@ background-position: center;
 
 
 .main-contacto {
-    background-image: url(../Root-\ LiceoFilosofico/bustos.jpg);
+    background-image: url(../Media/bustos.jpg);
     background-size: cover; }
     .main-contacto .section-contacto {
       display: flex;
