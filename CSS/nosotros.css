@@ -4,8 +4,6 @@
 
 } 
 
-
-
 header{
 
     width: 100%;
@@ -273,6 +271,64 @@ border: 2px solid white;
 
 
 
+.portada_nosotros {
+    background-image: url(../Media/fondo2.jpg);
+    height: 25rem;
+}
+
+.portada_nosotros p {
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    font-size: 2.9rem;
+    clear: left;
+    top: 11rem;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
+.portada_nosotros::before {
+    content: url(../Media/logo.png);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 14rem;
+}
+
+.nosotros {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.nosotros_img {
+    margin: 5% 5% 5% 10%;
+    width: 3%;
+    height: 20px;
+}
+
+.nosotros_img img {
+    width: 5%;
+    height: 10px;
+}
+
+
+.nosotros_texto {
+    margin: 5% 10% 5% 0%;
+    text-align: center;
+    width: 30%;
+}
+
+.nosotros_texto h1 {
+    text-align: left;
+}
+
+.nosotros_texto p {
+    text-align: left;
+    font-size: 1.2rem;
+}
+
 
 footer
 {
@@ -289,11 +345,3 @@ text-align: center;
 padding-top: 20px;
 
 } 
-
-@media media screen and (max-width: 768px) {
-
-#header {  }
-
-}
-
-
