@@ -25,6 +25,12 @@ padding: 30px;
 
 }  
 
+.encabezado-contacto {
+
+font-size: 20px;
+
+}
+
 header ul li{
 list-style: none;
 display: inline-block;
@@ -271,7 +277,70 @@ border: 2px solid white;
 
 }
 
+.main-contacto {
+    background-image: url(../Media/bustos.jpg);
+    background-size: cover; }
+    .main-contacto .section-contacto {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+      min-height: 90vh; }
+      .main-contacto .section-contacto .section-contacto-formulario {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        color: white;
+        background-color: black;
+        padding: 30px 20px 30px 20px;
+        align-items: center;
+        width: 60vh; }
+        .main-contacto .section-contacto .section-contacto-formulario .formulario-titulo {
+          font-size: 3rem;
+          padding: 10px;
+          font-family: "Montserrat", sans-serif; }
+        .main-contacto .section-contacto .section-contacto-formulario form {
+          display: flex;
+          flex-flow: column nowrap;
+          padding: 15px;
+          font-size: 1.5rem; }
+          .main-contacto .section-contacto .section-contacto-formulario form input {
+            border: 0;
+            padding: 10px 10px 0px 0px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid white;
+            background-color: black;
+            color: #cc9a4e; }
+            .main-contacto .section-contacto .section-contacto-formulario form input:focus {
+              outline: none;
+              background-color: black;
+              color: white; }
+            .main-contacto .section-contacto .section-contacto-formulario form input::placeholder {
+              color: white;
+              font-family: "Mulish", sans-serif; }
+          .main-contacto .section-contacto .section-contacto-formulario form textarea {
+            margin: 15px 0px 10px 0px;
+            font-family: "Mulish", sans-serif;
+            border: none;
+            border-bottom: 1px solid white; }
+          .main-contacto .section-contacto .section-contacto-formulario form button {
+            background-color: #d24504;
+            border: 1px solid white;
+            font-family: "Mulish", sans-serif;
+            color: white;
+            margin-top: 10px;
+            padding: 5px;
+            text-align: center; }
 
+
+p .sobrenosotros {
+font-size: 30px;
+text-align: right;
+background-color: #cc9a4e;
+color: white;
+font-family: 'Times New Roman', Times, serif;
+
+}
 
 
 footer
@@ -289,11 +358,4 @@ text-align: center;
 padding-top: 20px;
 
 } 
-
-@media media screen and (max-width: 768px) {
-
-#header {  }
-
-}
-
 
