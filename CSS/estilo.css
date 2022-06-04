@@ -17,7 +17,7 @@ header{
   font-size: 30px;
   font-family: "Noto Serif Display", serif;
   text-align: center;
-  width: 100vw;
+  width: 100%;
 }
 
 .encabezado p{ 
@@ -440,9 +440,9 @@ text-shadow: 5px 5px 5px black;
 
 
 .cursos {
-    background-image: url(../Media/foucault.jpg);
-    background-size: contain;
-    background-position: center;
+    background-image: url(../Media/barralateral.jpg);
+    background-size: cover;
+    background-position: cover;
 
 
 }
