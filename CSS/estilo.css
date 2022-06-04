@@ -119,9 +119,9 @@ main{
   background-size: cover;
   background-position: center;
 
-
-
+  
 }
+
 
 .main-contacto{
 
@@ -141,6 +141,19 @@ main{
   background-image: url(../Media/bustos.jpg);
   background-size: cover;
   background-position: center;
+
+
+}
+
+
+.propuesta {
+
+  height: 100vh;
+  width: 100%;
+  background-image: url(../Media/bustos.jpg);
+  background-size: cover;
+  background-position: center;
+
 
 
 }
@@ -195,7 +208,8 @@ main{
 }
 
 .foucault {
-  grid-area: "foucault"; }
+  grid-area: "foucault";
+  }
 
 .nietzsche {
   grid-area: "nietzsche"; }
@@ -281,6 +295,88 @@ row-gap: 40px; } }
     text-align: center;
   }
   
+
+  .propuestagrids {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "estudiando" "nosotros4";
+    height: 1000px;
+    width: 100vw;
+    justify-content: center;
+    align-content: space-around;
+    justify-items: center;
+    column-gap: 20px;
+    row-gap: 40px;     
+  
+  }
+   
+  
+  .estudiando, .nosotros4 {
+    display: flex;
+    width: 25vw;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    font-family: "Noto Serif Display", serif; 
+    background-color: #dbb377;
+    padding-top: 40px;
+  
+  
+  }
+  
+  .estudiando {
+    grid-area: "estudiando"; }
+  
+  .nosotros4 {
+    grid-area: "nosotros4"; }
+  
+  
+  
+  .tituloProduct {
+    display: flex;
+    font-weight: bold;
+    flex-direction: column;
+    justify-content: left;
+    text-align-last: center;
+    font-family: "Lato", sans-serif;
+    margin: 10px 10px; }
+  
+  
+  .tituloDes {
+      padding: 20px;
+      padding-bottom: 30px; 
+      color: #f3ca71;
+      font-size: 20px;
+      font-family: 'Times New Roman', Times, serif;
+      text-align: center;
+    }
+  
+
+.sobrenosotros34 {
+font-family: 'Times New Roman', Times, serif;
+font-size: 30px;
+color:#dbb377;
+background-color: black;
+text-align: center;
+padding: 10px;
+
+
+
+}
+
+
+.nosotros_img{
+
+align-content: center;
+align-content: center;
+align-items: center;
+
+
+
+}
+
 
 
 
@@ -373,57 +469,10 @@ transform: scale(1.3);
 
 }
 
-.item4{
-background-image: url(../Media/flyerpandemia.jpg);
-background-size: contain;
-background-position: center;
-
-
-}
-
-.item4:hover{
-transform: scale(1.3);
-
-}
-
-.item5 {
-font-size: 20px;
-font-family: 'Times New Roman', Times, serif;
-text-align: center;
-text-shadow: 2px 2px 2px red;
-padding: 30px;
-
-
-}
-
-.item5:hover{
-transform: scale(1.2);
-
-
-} 
 
 
 
-.item6 {
-font-family: 'Times New Roman', Times, serif;
-font-size: 20px;
-text-align: center;
-padding: 30px;
-
-
-}
-
-
-.item7{
-font-family:'Times New Roman', Times, serif;
-font-size: 20px;
-text-align: center;
-padding: 30px;
-
-
-
-
-} 
+ 
 
 .intro{
 background-color: black;
@@ -519,6 +568,67 @@ border: 2px solid white;
             padding: 5px;
             text-align: center; }
 
+/*MEDIA QUERIES Contacto*/
+@media screen and (max-width: 600px) and (max-width: 900px) {
+  #main-contacto{
+    background-image: url(../Media/bustos.jpg);
+    background-size: cover; }
+    .main-contacto .section-contacto {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+      min-height: 90vh; }
+      .main-contacto .section-contacto .section-contacto-formulario {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        color: white;
+        background-color: black;
+        padding: 30px 20px 30px 20px;
+        align-items: center;
+        width: 60vh; }
+        .main-contacto .section-contacto .section-contacto-formulario .formulario-titulo {
+          font-size: 3rem;
+          padding: 10px;
+          font-family: "Montserrat", sans-serif; }
+        .main-contacto .section-contacto .section-contacto-formulario form {
+          display: flex;
+          flex-flow: column nowrap;
+          padding: 15px;
+          font-size: 1.5rem; }
+          .main-contacto .section-contacto .section-contacto-formulario form input {
+            border: 0;
+            padding: 10px 10px 0px 0px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid white;
+            background-color: black;
+            color: #cc9a4e; }
+            .main-contacto .section-contacto .section-contacto-formulario form input:focus {
+              outline: none;
+              background-color: black;
+              color: white; }
+            .main-contacto .section-contacto .section-contacto-formulario form input::placeholder {
+              color: white;
+              font-family: "Mulish", sans-serif; }
+          .main-contacto .section-contacto .section-contacto-formulario form textarea {
+            margin: 15px 0px 10px 0px;
+            font-family: "Mulish", sans-serif;
+            border: none;
+            border-bottom: 1px solid white; }
+          .main-contacto .section-contacto .section-contacto-formulario form button {
+            background-color: #d24504;
+            border: 1px solid white;
+            font-family: "Mulish", sans-serif;
+            color: white;
+            margin-top: 10px;
+            padding: 5px;
+            text-align: center; }
+          
+          
+    }
+
+
 
 p .sobrenosotros {
 font-size: 30px;
@@ -545,4 +655,36 @@ text-align: center;
 padding-top: 20px;
 
 } 
+
+/*MEDIA QUERIES Footer*/
+@media screen and (max-width: 600px) {
+#footer{
+  height: 45px;
+  width: 100%;
+  background-color: #cc9a4e;
+  background-image: linear-gradient(rgb(119, 7, 7),#d24504 );
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+  text-shadow: 10px 10px 10px black;
+  font-size: 25px;
+  text-align: center;
+  padding-top: 20px;} 
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  #footer{
+    height: 45px;
+    width: 100%;
+    background-color: #cc9a4e;
+    background-image: linear-gradient(rgb(119, 7, 7),#d24504 );
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    text-shadow: 10px 10px 10px black;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 20px;} 
+  
+  }
+
 
