@@ -8,10 +8,16 @@
 
 header{
 
-    width: 100%;
-    height: 150px;
-    background-color: #cc9a4e;
-    background-image: linear-gradient(rgb(98, 73, 34), #d24504);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "header";
+  background-image: linear-gradient( rgb(119, 7, 7),#d24504 );
+  color: #d3a549;
+  font-size: 30px;
+  font-family: "Noto Serif Display", serif;
+  text-align: center;
+  width: 100vw;
 }
 
 .encabezado p{ 
@@ -32,9 +38,14 @@ font-size: 20px;
 }
 
 header ul li{
-list-style: none;
-display: inline-block;
-padding: 8px;
+  list-style: none;
+  display: inline-table;
+  padding: 8px;
+  background-color: black;
+  color: orange;
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
 
 } 
 
@@ -50,13 +61,21 @@ header ul  li a{
 
 } 
 
-header a:hover{ color: black;
+header a:hover{ color: #d24504;
 } 
 
 
-.barra{
-    float: right;
-} 
+.navbar {
+background-color: #d24504;
+}
+
+.btn {
+color: #d24504;
+border:2px solid #d24504
+}
+
+
+
 
 .barra2{
 float: right;
@@ -72,26 +91,196 @@ font-family: 'Times New Roman', Times, serif;
 } 
 
 .logo{
-    font-size: 45px;
-    font-family: 'Times New Roman', Times, serif;
-    color: black;
-    text-transform: capitalize;
-    float: left;
-    margin-left: 10px;
-    padding: 30px;
+  font-size: 50px;
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+  text-transform: capitalize;
+  float: left;
+  margin-left: 10px;
+  padding: 30px;
 
 }
 
 main{
 
-    height: 100vh;
+  height: 150vh;
+  width: 100%;
+  background-image: url(../Media/bustos.jpg);
+  background-size: cover;
+  background-position: cover;
+
+}
+
+.cursosmain {
+
+  height: 250vh;
+  width: 100%;
+  background-image: url(../Media/bustos.jpg);
+  background-size: cover;
+  background-position: center;
+
+
+
+}
+
+.main-contacto{
+
+  height: 100vh;
+  width: 100%;
+  background-image: url(../Media/bustos.jpg);
+  background-size: cover;
+  background-position: center;
+
+
+}
+
+.mainnosotros{
+
+  height: 150vh;
+  width: 100%;
+  background-image: url(../Media/bustos.jpg);
+  background-size: cover;
+  background-position: center;
+
+
+}
+
+/*Media Queries Main*/
+
+@media screen and (max-width: 970px) {
+  #main {
+    height: 250vh;
     width: 100%;
-    background-image: url(../Media/bustos.jpg);
+    background-image: url(../img/bustos.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: center;}
+}
+
+ @media screen and (max-width: 600px) {
+  #main {
+    height: 250vh;
+    width: 100%;
+    background-image: url(../img/bustos.jpg);
+    background-size: cover;
+    background-position: center;}
+}
+
+.cursosGrids {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "foucault" "nietzsche" "pandemia" "agamben" "platon" "preciado";
+  height: 1500px;
+  width: 100vw;
+  justify-content: center;
+  align-content: space-around;
+  justify-items: center;
+  column-gap: 20px;
+  row-gap: 40px;     
+
+}
+ 
+
+.foucault, .nietzsche, .pandemia, .agamben, .platon, .preciado {
+  display: flex;
+  width: 20vw;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  font-family: "Noto Serif Display", serif; 
+  background-color: #dbb377;
 
 
-} 
+}
+
+.foucault {
+  grid-area: "foucault"; }
+
+.nietzsche {
+  grid-area: "nietzsche"; }
+
+.pandemia {
+  grid-area: "pandemia"; }
+
+.agamben {
+  grid-area: "agamben"; }
+
+.platon {
+  grid-area: "platon"; }
+
+.preciado {
+  grid-area: "preciado"; }
+
+.tituloProduct {
+  display: flex;
+  font-weight: bold;
+  flex-direction: column;
+  justify-content: left;
+  text-align-last: center;
+  font-family: "Lato", sans-serif;
+  margin: 10px 10px; }
+
+h3 {
+
+  padding-bottom: 15px; }
+
+
+.botonProd{
+
+  background-color: black;
+  border: 1px solid white;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  text-align: center;
+
+}
+
+
+
+/*MEDIA QUERIES PRODUCTOS*/
+@media screen and (max-width: 600px) {
+.productGrids {
+display: grid;
+grid-template-columns: 100%;
+grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-template-areas: "foucault" "nietzsche" "pandemia" "agamben" "platon" "preciado";
+height: 6000px;
+width: 100vw;
+justify-content: center;
+align-content: space-around;
+justify-items: center;
+column-gap: 20px;
+row-gap: 40px; } }
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+.productGrids {
+display: grid;
+grid-template-columns: 1fr  1fr;
+grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-template-areas: "foucault" "nietzsche" "pandemia" "agamben" "platon" "preciado";
+height: 2500px;
+width: 100vw;
+justify-content: center;
+align-content: space-around;
+justify-items: center;
+column-gap: 20px;
+row-gap: 40px; } }
+
+
+
+.tituloDes {
+    padding: 20px;
+    padding-bottom: 30px; 
+    color: #f3ca71;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+  }
+  
 
 
 
@@ -125,25 +314,23 @@ font-family: 'Times New Roman', Times, serif;
 }
 
 .grid-container{
-display: grid;
-background-color: aliceblue;
-grid-template-areas: 'header header header';
-grid-template-columns: auto auto auto;
-grid-template-rows: 300px 300px 300px;
-border: 2px solid black;
-height: auto;
-
-
-} 
-
-.grid-container div{
-background-color: #cc9a4e;
-border: 2px solid black;
-height: auto;
-
-}
-
-
+  display: grid;
+  background-color: aliceblue;
+  grid-template-areas: 'header header header';
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 300px 300px 300px;
+  border: 2px solid black;
+  height: auto;
+  
+  
+  } 
+  
+  .grid-container div{
+  background-color: #cc9a4e;
+  border: 2px solid black;
+  height: auto;
+  
+  }
 
 
 .item1 {
@@ -349,7 +536,7 @@ footer
 height: 45px;
 width: 100%;
 background-color: #cc9a4e;
-background-image: linear-gradient(rgb(98, 73, 34),#d24504 );
+background-image: linear-gradient(rgb(119, 7, 7),#d24504 );
 font-family: 'Times New Roman', Times, serif;
 color: black;
 text-shadow: 10px 10px 10px black;
