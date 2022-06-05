@@ -105,7 +105,7 @@ main{
 
   height: 150vh;
   width: 100%;
-  background-image: url(../Media/bustos.jpg);
+  background-image: url(../media/bustos.jpg);
   background-size: cover;
   background-position: cover;
 
@@ -115,7 +115,7 @@ main{
 
   height: 250vh;
   width: 100%;
-  background-image: url(../Media/bustos.jpg);
+  background-image: url(../media/bustos.jpg);
   background-size: cover;
   background-position: center;
 
@@ -127,7 +127,7 @@ main{
 
   height: 100vh;
   width: 100%;
-  background-image: url(../Media/bustos.jpg);
+  background-image: url(../media/bustos.jpg);
   background-size: cover;
   background-position: center;
 
@@ -138,7 +138,7 @@ main{
 
   height: 150vh;
   width: 100%;
-  background-image: url(../Media/bustos.jpg);
+  background-image: url(../media/bustos.jpg);
   background-size: cover;
   background-position: center;
 
@@ -150,7 +150,7 @@ main{
 
   height: 100vh;
   width: 100%;
-  background-image: url(../Media/bustos.jpg);
+  background-image: url(../media/bustos.jpg);
   background-size: cover;
   background-position: center;
 
@@ -367,17 +367,6 @@ padding: 10px;
 }
 
 
-.nosotros_img{
-
-align-content: center;
-align-content: center;
-align-items: center;
-
-
-
-}
-
-
 
 
 
@@ -441,7 +430,7 @@ font-family: 'Times New Roman', Times, serif;
 
 
 .item2 {
-background-image: url(../Media/foucault2.jpg);
+background-image: url(../media/foucault2.jpg);
 background-size: contain;
 background-position: center;
 }
@@ -454,7 +443,7 @@ transform: scale(1.3);
 }
 
 .item3 {
-    background-image: url(../Media/flyernietzsche.jpg);
+    background-image: url(../media/flyernietzsche.jpg);
     background-size: contain;
     background-position: center;
 
@@ -489,7 +478,7 @@ text-shadow: 5px 5px 5px black;
 
 
 .cursos {
-    background-image: url(../Media/barralateral.jpg);
+    background-image: url(../media/barralateral.jpg);
     background-size: cover;
     background-position: cover;
 
@@ -497,7 +486,7 @@ text-shadow: 5px 5px 5px black;
 }
 
 .publicidad{
-background-image: url(../Media/flyernietzsche.jpg);
+background-image: url(../media/flyernietzsche.jpg);
 background-size:contain;
 background-position: center;
 
@@ -514,7 +503,7 @@ border: 2px solid white;
 }
 
 .main-contacto {
-    background-image: url(../Media/bustos.jpg);
+    background-image: url(../media/bustos.jpg);
     background-size: cover; }
     .main-contacto .section-contacto {
       display: flex;
