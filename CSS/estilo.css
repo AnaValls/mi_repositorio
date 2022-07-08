@@ -10,7 +10,7 @@ header{
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "header";
-  background-image: linear-gradient( rgb(119, 7, 7),#d24504 );
+  background-image: linear-gradient( #770707,#d24504 );
   color: #d3a549;
   font-size: 30px;
   font-family: "Noto Serif Display", serif;
